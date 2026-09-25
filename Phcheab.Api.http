@@ -1,11 +1,11 @@
-@Phcheab.Api_HostAddress = http://localhost:5236
+@Riebreab.Api_HostAddress = http://localhost:5236
 
-GET {{Phcheab.Api_HostAddress}}/api/items
+GET {{Riebreab.Api_HostAddress}}/api/items
 Accept: application/json
 
 ###
 
-POST {{Phcheab.Api_HostAddress}}/api/items
+POST {{Riebreab.Api_HostAddress}}/api/items
 Content-Type: application/json
 
 {
@@ -15,12 +15,12 @@ Content-Type: application/json
 
 ###
 
-GET {{Phcheab.Api_HostAddress}}/api/items/1
+GET {{Riebreab.Api_HostAddress}}/api/items/1
 Accept: application/json
 
 ###
 
-PUT {{Phcheab.Api_HostAddress}}/api/items/1
+PUT {{Riebreab.Api_HostAddress}}/api/items/1
 Content-Type: application/json
 
 {
@@ -30,6 +30,6 @@ Content-Type: application/json
 
 ###
 
-DELETE {{Phcheab.Api_HostAddress}}/api/items/1
+DELETE {{Riebreab.Api_HostAddress}}/api/items/1
 
 ###

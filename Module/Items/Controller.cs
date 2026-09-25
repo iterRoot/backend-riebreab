@@ -1,8 +1,8 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using PhcheabApi.Core;
+using RiebreabApi.Core;
 
-namespace PhcheabApi.Modules.Items;
+namespace RiebreabApi.Modules.Items;
 
 public class ItemsController(IItemRepository repository, IMapper mapper) : MyController
 {

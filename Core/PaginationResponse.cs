@@ -1,4 +1,4 @@
-namespace PhcheabApi.Core;
+namespace RiebreabApi.Core;
 
 public class PaginationResponse
 {

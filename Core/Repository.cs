@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
-namespace PhcheabApi.Core;
+namespace RiebreabApi.Core;
 
 public interface IRepository<T> where T : Entity
 {

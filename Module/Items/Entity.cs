@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace PhcheabApi.Modules.Items;
+namespace RiebreabApi.Modules.Items;
 
 public record ItemResponse(int Id, string Name, string? Description, DateTime CreatedAt, DateTime? UpdatedAt);
 

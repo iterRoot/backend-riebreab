@@ -2,7 +2,7 @@ services:
   postgres:
     image: postgres:16-alpine
     environment:
-      POSTGRES_DB: phcheab
+      POSTGRES_DB: Riebreab
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:

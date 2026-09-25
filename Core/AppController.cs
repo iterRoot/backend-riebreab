@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace PhcheabApi.Core;
+namespace RiebreabApi.Core;
 [ApiController]
 [Route("api/[controller]")]
 public class MyController : ControllerBase

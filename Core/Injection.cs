@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace PhcheabApi.Core;
+namespace RiebreabApi.Core;
 
 public static class DependencyInjection
 {

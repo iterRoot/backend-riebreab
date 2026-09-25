@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using PhcheabApi.Modules.Items;
+using RiebreabApi.Modules.Items;
 
-namespace PhcheabApi.Data;
+namespace RiebreabApi.Data;
 
 public class MyDbContext(DbContextOptions<MyDbContext> options) : DbContext(options)
 {

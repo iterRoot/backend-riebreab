@@ -1,7 +1,7 @@
-using PhcheabApi.Core;
-using PhcheabApi.Data;
+using RiebreabApi.Core;
+using RiebreabApi.Data;
 
-namespace PhcheabApi.Modules.Items;
+namespace RiebreabApi.Modules.Items;
 
 public interface IItemRepository : IRepository<Item>
 {

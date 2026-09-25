@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using PhcheabApi.Core;
-using PhcheabApi.Data;
+using RiebreabApi.Core;
+using RiebreabApi.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +9,7 @@ builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
     {
-        Title = "Phcheab API",
+        Title = "Riebreab API",
         Version = "v1"
     });
 });
@@ -34,7 +34,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(options =>
     {
-        options.SwaggerEndpoint("/swagger/v1/swagger.json", "Phcheab API v1");
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "Riebreab API v1");
     });
 
     app.MapGet("/", () => Results.Redirect("/swagger")).ExcludeFromDescription();

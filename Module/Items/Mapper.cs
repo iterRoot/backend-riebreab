@@ -1,6 +1,6 @@
 using AutoMapper;
 
-namespace PhcheabApi.Modules.Items;
+namespace RiebreabApi.Modules.Items;
 
 public class ItemMapper : Profile
 {

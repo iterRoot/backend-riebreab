@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using PhcheabApi.Data;
+using RiebreabApi.Data;
 
 #nullable disable
 
-namespace Phcheab.Api.Migrations
+namespace Riebreab.Api.Migrations
 {
     [DbContext(typeof(MyDbContext))]
     [Migration("20260923032025_InitialCreate")]
@@ -25,7 +25,7 @@ namespace Phcheab.Api.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("PhcheabApi.Modules.Items.Item", b =>
+            modelBuilder.Entity("RiebreabApi.Modules.Items.Item", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

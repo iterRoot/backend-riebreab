@@ -1,6 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
-namespace PhcheabApi.Core;
+namespace RiebreabApi.Core;
 
 public abstract class Entity
 {
