@@ -1,0 +1,35 @@
+@Phcheab.Api_HostAddress = http://localhost:5236
+
+GET {{Phcheab.Api_HostAddress}}/api/items
+Accept: application/json
+
+###
+
+POST {{Phcheab.Api_HostAddress}}/api/items
+Content-Type: application/json
+
+{
+  "name": "First item",
+  "description": "Created via .http file"
+}
+
+###
+
+GET {{Phcheab.Api_HostAddress}}/api/items/1
+Accept: application/json
+
+###
+
+PUT {{Phcheab.Api_HostAddress}}/api/items/1
+Content-Type: application/json
+
+{
+  "name": "Updated item",
+  "description": "Updated via .http file"
+}
+
+###
+
+DELETE {{Phcheab.Api_HostAddress}}/api/items/1
+
+###
