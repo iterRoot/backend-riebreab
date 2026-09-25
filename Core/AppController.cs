@@ -37,6 +37,14 @@ public class MyController : ControllerBase
     {
         return Error("Item is not found!");
     }
+    protected IActionResult LogInNotFound()
+    {
+        return Error("LogIn is not found!");
+    }
+    protected IActionResult SignInNotFound()
+    {
+        return Error("SignIn is not found!");
+    }
 
     [NonAction]
     protected IActionResult Error(string message)

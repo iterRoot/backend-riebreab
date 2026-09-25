@@ -9,10 +9,10 @@ using RiebreabApi.Data;
 
 #nullable disable
 
-namespace Riebreab.Api.Migrations
+namespace Phcheab.Api.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20260923032025_InitialCreate")]
+    [Migration("20260925090921_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
