@@ -12,8 +12,8 @@ using RiebreabApi.Data;
 namespace Phcheab.Api.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20260925100255_AddContentModules")]
-    partial class AddContentModules
+    [Migration("20261003091134_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -1,3 +1,4 @@
+using Amazon.S3;
 using Microsoft.EntityFrameworkCore;
 using RiebreabApi.Core;
 using RiebreabApi.Data;
@@ -23,6 +24,19 @@ builder.Services.AddCors(options =>
     {
         policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
     });
+});
+
+builder.Services.Configure<R2Options>(builder.Configuration.GetSection("R2Storage"));
+builder.Services.AddSingleton<IAmazonS3>(sp =>
+{
+    var options = builder.Configuration.GetSection("R2Storage").Get<R2Options>() ?? new R2Options();
+    var config = new AmazonS3Config { ForcePathStyle = true };
+    if (!string.IsNullOrWhiteSpace(options.AccountId))
+    {
+        config.ServiceURL = $"https://{options.AccountId}.r2.cloudflarestorage.com";
+    }
+
+    return new AmazonS3Client(options.AccessKeyId, options.SecretAccessKey, config);
 });
 
 builder.Services.AddInjection();
